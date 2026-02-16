@@ -2,16 +2,7 @@
 {% load static %}
 {% block content %}
 <main class="principal">
-    <section class="menu-lateral">
-        <nav class="menu-lateral__navegacao">
-            <a href="{% url 'index' %}"><img src="{% static 'assets/ícones/1x/Home - ativo.png' %}" alt="ícone de home"> Home</a>
-            <a href="#"><img src="{% static 'assets/ícones/1x/Mais vistas - inativo.png' %}" alt="ícone de mais vistas">
-                Mais vistas</a>
-            <a href="#"><img src="{% static 'assets/ícones/1x/Novas - inativo.png' %}" alt="ícone de novas"> Novas</a>
-            <a href="#"><img src="{% static 'assets/ícones/1x/Surpreenda-me - inativo.png' %}"
-                    alt="ícone de surpreenda-me"> Surpreenda-me</a>
-        </nav>
-    </section>
+    {% include 'galeria/partials/_menu.html' %}
     <section class="conteudo">
         <section class="tags">
             <p class="tags__titulo">Busque por tags:</p>
